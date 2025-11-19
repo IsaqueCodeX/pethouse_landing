@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* New Palette: https://colorhunt.co/palette/f4f9f9ccf2f4a4ebf3aaaaaa */
+    --background: 180 25% 98%; /* #F4F9F9 */
+    --foreground: 210 15% 20%; /* Dark, cool gray for text */
+
+    --card: 0 0% 100%; /* White for cards to pop slightly */
+    --card-foreground: 210 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 20%;
+
+    --primary: 185 50% 55%; /* A more accessible version of #A4EBF3 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 67%; /* #AAAAAA */
+    --secondary-foreground: 210 15% 15%;
+
+    --muted: 184 67% 91%; /* #CCF2F4 */
+    --muted-foreground: 210 15% 45%;
+
+    --accent: 185 70% 80%; /* #A4EBF3 */
+    --accent-foreground: 210 15% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --emergency: 0 84% 60%;
+    --emergency-foreground: 0 0% 100%;
+
+    --border: 184 67% 91%;
+    --input: 0 0% 100%;
+    --ring: 185 50% 55%;
+
+    --radius: 0.75rem; /* rounded-xl */
+
+    --sidebar-background: 180 25% 96%;
+    --sidebar-foreground: 210 15% 20%;
+    --sidebar-primary: 185 50% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 185 70% 80%;
+    --sidebar-accent-foreground: 210 15% 20%;
+    --sidebar-border: 184 67% 91%;
+    --sidebar-ring: 185 50% 55%;
+  }
+
+  .dark {
+    --background: 210 15% 10%;
+    --foreground: 180 25% 98%;
+
+    --card: 210 15% 15%;
+    --card-foreground: 180 25% 98%;
+
+    --popover: 210 15% 10%;
+    --popover-foreground: 180 25% 98%;
+
+    --primary: 184 67% 91%; /* #CCF2F4 */
+    --primary-foreground: 210 15% 10%;
+
+    --secondary: 0 0% 67%; /* #AAAAAA */
+    --secondary-foreground: 210 15% 10%;
+
+    --muted: 210 15% 20%;
+    --muted-foreground: 180 25% 85%;
+
+    --accent: 210 15% 20%;
+    --accent-foreground: 180 25% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --emergency: 0 84% 60%;
+    --emergency-foreground: 0 0% 100%;
+
+    --border: 210 15% 25%;
+    --input: 210 15% 25%;
+    --ring: 184 67% 91%;
+    
+    --sidebar-background: 210 15% 8%;
+    --sidebar-foreground: 180 25% 98%;
+    --sidebar-primary: 184 67% 91%;
+    --sidebar-primary-foreground: 210 15% 10%;
+    --sidebar-accent: 210 15% 15%;
+    --sidebar-accent-foreground: 180 25% 98%;
+    --sidebar-border: 210 15% 20%;
+    --sidebar-ring: 184 67% 91%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .hover-lift {
+    @apply hover:scale-105 transition-smooth;
+  }
+}
