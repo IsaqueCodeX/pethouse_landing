@@ -83,7 +83,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-background/60 text-sm text-center md:text-left">
-              © 2024 PetHouse. Todos os direitos reservados.
+              © 2025 PetHouse. Todos os direitos reservados.
             </p>
             
             {/* Developer Credit */}
