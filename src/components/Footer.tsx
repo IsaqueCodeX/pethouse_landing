@@ -72,7 +72,7 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a href="mailto:contato@pethouse.com.br" className="text-background/80 hover:text-primary transition-smooth">
-                  contato@pethouse.com.br
+                  contato@pethouse.com
                 </a>
               </li>
             </ul>
