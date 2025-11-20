@@ -1,6 +1,6 @@
 # PetHouse - Site Institucional para Clínica Veterinária
 
-![PetHouse](https://raw.githubusercontent.com/IsaqueCodeX/PetHouse/main/public/banner.png)
+
 
 ## 📜 Sobre o Projeto
 
